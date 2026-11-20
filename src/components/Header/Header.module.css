@@ -61,14 +61,25 @@
 }
 
 /* Logo */
-.logo {
+.logo,
+.header h1 {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #123968;
-  font-size: 27px;
-  font-weight: 800;
+  color: #2e5cf2;
+  font-size: 34px;
+  font-weight: 900;
   white-space: nowrap;
+  letter-spacing: 0.5px;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.logo:hover,
+.header h1:hover {
+  color: #0369a1;
+  transform: translateY(-1px);
 }
 
 .logo strong {
